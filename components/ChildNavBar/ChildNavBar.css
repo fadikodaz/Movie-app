@@ -1,0 +1,139 @@
+.navBar
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 100px;
+    height: 60px;
+    background-color:#144184;
+}
+.left,
+.right
+{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    height: 100%;
+}
+.MenuBtn
+{
+    display: none;
+}
+.logo
+{
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    gap: 5px;
+    background-color: #0404c0;
+    border-bottom-right-radius: 20px;
+}
+.logo span
+{
+    background-color: orange;
+    border-radius: 2px;
+    color: #000;
+    font-weight: 600;
+}
+.logo h2
+{
+   color: #fff;
+}
+.navBar ul
+{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    height: 100%;
+}
+.navBar ul li
+{
+    list-style: none;
+    height: 100%;
+}
+ul .LinkTag
+{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.navBar button
+{
+    width: 80px;
+    height: 35px;
+    font-size: 1em;
+    color: #333;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+
+
+@media only screen and (max-width:1115px)
+{
+    .navBar
+    {
+        /* height: 120px; */
+        position: relative;
+        padding: 0 30px;
+    }
+    .navBar ul
+    {
+        display:none;
+    }
+    .Heading
+    {
+        display: none;
+    }
+    .MenuBtn
+    {
+        display: flex;
+        color: #fff;
+        font-size: 1.3em;
+        cursor: pointer;
+    }
+    .navBar button
+    {
+        display: none;
+    }
+}
+
+
+
+.genre
+{
+    position: relative;
+}
+.genreList
+{
+    position: absolute;
+    z-index: 999;
+    top: 60px;
+    left: 0;
+    background-color:#fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    color: #000;
+    display: none;
+    grid-template-columns: repeat(4,150px);
+    padding: 10px;
+    gap: 10px;
+}
+.genreBtn
+{
+    cursor: pointer;
+    padding-left: 10px;
+}
+.genreBtn:hover
+{
+    background-color: #3E8AFA;
+    color: #fff;
+}
+.genre:hover .genreList
+{
+    display: grid;
+}

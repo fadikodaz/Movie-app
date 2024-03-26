@@ -1,0 +1,78 @@
+.SearchBarBox
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+}
+.fieldBox
+{
+    width: 950px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px #ccc;
+}
+.fieldBox i
+{
+    font-size: 1.5em;
+    color: #000;
+    font-weight: 600;
+}
+.fieldBox input
+{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    font-size: 1.5em;
+    color: #ccc;
+}
+.SearchBarBox button
+{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: #2671e1;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.SearchBarBox button:hover
+{
+    transition: 0.5s;
+    background-color: #12438E;
+}
+
+
+@media only screen and (max-width:1115px)
+{
+    .SearchBarBox
+    {
+        margin-top: 30px;
+        padding: 0 20px;
+    }
+    .SearchBarBox button
+    {
+        display: none;
+    }
+    .fieldBox
+    {
+        height: 50px;
+        border-radius: 4px;
+        box-shadow: none;
+    }
+}

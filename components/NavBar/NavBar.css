@@ -1,0 +1,98 @@
+.navBar
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 100px;
+    height: 60px;
+    backdrop-filter: blur(4px);
+}
+.left,
+.right
+{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.MenuBtn
+{
+    display: none;
+}
+.logo
+{
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    gap: 5px;
+    background-color: #0404c0;
+    border-bottom-right-radius: 20px;
+}
+.logo span
+{
+    background-color: orange;
+    border-radius: 2px;
+    color: #000;
+    font-weight: 600;
+}
+.logo h2
+{
+   color: #fff;
+}
+.navBar ul
+{
+    position: relative;
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+ul .LinkTag
+{
+    text-decoration: none;
+    color: #fff;
+}
+/* .genre
+{
+    position: relative;
+}
+.genList
+{
+    position: absolute;
+    z-index: 9999;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(4,120px);
+    margin-top: 10px;
+    gap: 10px;
+    padding: 20px;
+    background-color: red;
+} */
+.navBar button
+{
+    width: 80px;
+    height: 35px;
+    font-size: 1em;
+    color: #333;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+
+
+@media only screen and (max-width:1115px)
+{
+    .navBar ul
+    {
+        display:none;
+    }
+    .Heading
+    {
+        display: none;
+    }
+    .MenuBtn
+    {
+        display: flex;
+    }
+}

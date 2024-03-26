@@ -1,0 +1,280 @@
+.DetailWrapper
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px #ccc;
+    overflow: hidden;
+    padding: 20px 30px;
+    display: flex;
+    gap: 30px;
+}
+
+/* Left Box */
+.LeftBox
+{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.LeftBox .imgBox
+{
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ddd;
+}
+.LeftBox .imgBox  img,
+.LeftBox .imgBox .img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.voteWrapper
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.voteWrapper .voteLine
+{
+    position: relative;
+    width: 100%;
+    height: 4px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #333;
+}
+.voteWrapper .voteLine .voteBar
+{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #2160BC;
+}
+.voteBtns
+{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.voteBtns button
+{
+    width: 100%;
+    height: 35px;
+    border: none;
+    outline: none;
+    line-height: 35px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.voteBtns button:hover
+{
+    opacity: 0.9;
+}
+.voteBtns button i
+{
+    font-size: 1.3em;
+}
+.voteBtns .LikeBtn
+{
+    background-color: #2160BC;
+    color: #fff;
+}
+.voteBtns .DisLikeBtn
+{
+    background-color: #444;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+/* Right box  */
+.RightBox
+{
+    width: calc(100% - 200px);
+}
+.RightBox .Watch_add_Btns_Wrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Watch_add_Btns_Wrapper .watchBtn,
+.Watch_add_Btns_Wrapper .addBtn
+{
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #2160BC;
+    color: #fff;
+    font-size: 1em;
+}
+.Watch_add_Btns_Wrapper .watchBtn:hover
+{
+    background-color: #0c54c0;
+}
+.Watch_add_Btns_Wrapper .addBtn
+{
+    width: 150px;
+    background-color: #ddd;
+    color: #333;
+}
+.MovieTitleWrapper
+{
+    margin: 20px 0;
+}
+.MovieTitleWrapper .title
+{
+    font-size: 2em;
+    font-weight: 300;
+    color: #333;
+    text-decoration: none;
+}
+.MovieTitleWrapper .title:hover
+{
+    color: #2160BC;
+}
+.MovieTitleWrapper .tagLine
+{
+    color: #ccc;
+    font-size: 15px;
+    font-weight: 300;
+}
+.Movie_Over_View_Wrapper 
+{
+    margin-bottom: 20px;
+}
+.Movie_Over_View_Wrapper p
+{
+    color: #333;
+    font-size: 15px;
+    font-weight: 300;
+}
+.videoType_Btns_Wwrapper
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.videoType_Btns_Wwrapper button
+{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.videoType_Btns_Wwrapper .trailerBtn
+{
+    width: 80px;
+    height: 35px;
+    font-size: 1em;
+    background-color: #fbf8f8;
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+.videoType_Btns_Wwrapper .trailerBtn i
+{
+    margin: 0 5px 0 0;
+}
+.videoType_Btns_Wwrapper .hdBtn
+{
+    font-size: 1em;
+    width: 40px;
+    height: 35px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #fbf8f8;
+}
+.videoType_Btns_Wwrapper .imdbBtn
+{
+    width: 60px;
+    height: 35px;
+    font-size: 1em;
+    color: #f0a009;
+    
+    border-radius: 20px;
+}
+.videoType_Btns_Wwrapper .imdbBtn:focus
+{
+    border: 1px solid #f0a009;
+}
+
+
+.Movie_All_Info_Wrapper
+{
+    /* display: flex; */
+    gap: 40px;
+}
+.Movie_All_Info_Wrapper .Box .content
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+.Movie_All_Info_Wrapper .Box .content h4
+{
+    font-weight: 550;
+    color: #333;
+}
+.Movie_All_Info_Wrapper .Box .content p
+{
+    font-weight: 300;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1200px)
+{
+    .Movie_All_Info_Wrapper
+    {
+        flex-direction: column;
+        gap: 0;
+    }
+    .Movie_All_Info_Wrapper .Box .content p
+    {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    
+}
+
+
+@media only screen and (max-width:816px)
+{
+    .LeftBox
+    {
+        display: none;
+    }
+    .RightBox
+    {
+        width: 100%;
+    }
+}
